@@ -1,0 +1,19 @@
+10#Jack London#Aventures en mer#recits#1024#B
+20#Moliere#Dom Juan#theatre#192#B
+30#Stendhal#La chartreuse de Parme#roman#550#B
+40#Victor Hugo#La legende des siecles#poesie#1030#B
+50#Honore de Balzac#La peau de chagrin#roman#416#A
+60#Jack London#L'appel de la foret#roman#158#A
+70#Honore de Balzac#L'auberge rouge#nouvelle#80#B
+71#Honore de Balzac#Le pere Goriot#roman#384#C
+80#Stendhal#Le rouge et le noir#roman#640#A
+90#Ernest Hemingway#Le vieil homme et la mer#roman#144#A
+100#Victor Hugo#Les contemplations#poesie#608#A
+110#Moliere#Les fourberies de Scapin#theatre#192#A
+120#Victor Hugo#Les miserables#roman#352#A
+130#Moliere#Les precieuses ridicules#theatre#128#B
+140#Victor Hugo#Les travailleurs de la mer#roman#674#C
+141#Victor Hugo#Notre-Dame de Paris#roman#730#A
+142#Victor Hugo#Odes et ballades#poesie#800#B
+143#Victor Hugo#Quatre-vingt-treize#roman#575#B
+150#Honore de Balzac#Un drame au bord de la mer#nouvelle#45#A

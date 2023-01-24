@@ -1,0 +1,29 @@
+all: $(PB)server $(PB)client
+
+PH = ./headers/
+PB = ./bin/
+PS = ./sources/
+
+server: $(PB)discuServer.o $(PB)req.o $(PB)server.o
+	gcc -Wall $(PB)discuServer.o $(PB)req.o $(PB)server.o -o $(PB)server
+
+$(PB)server.o : $(PS)server.c $(PH)discuServer.h $(PH)req.h
+	gcc -Wall -c $(PS)server.c
+
+$(PB)discuServer.o : $(PS)discuServer.c $(PH)discuServer.h
+	gcc -Wall -c $(PS)discuServer.c
+
+$(PB)req.o : $(PS)req.c $(PH)req.h
+	gcc -Wall -c $(PS)req.c
+
+$(PB)discuClient.o : $(PS)discuClient.c $(PH)discuClient.h $(PH)req.h
+	gcc -Wall -c $(PS)discuClient.c
+
+$(PB)client.o: $(PS)client.c $(PH)struct.h $(PH)req.h $(PH)discuClient.h
+	gcc -Wall -c $(PS)client.c 
+
+client: $(PB)client.o $(PB)req.o $(PB)discuClient.o
+	gcc -Wall $(PB)client.o $(PB)req.o $(PB)discuClient.o -o $(PB)client
+
+clean :
+	-rm $(PB)*.o
